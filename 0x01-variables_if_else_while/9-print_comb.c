@@ -7,6 +7,7 @@
 int main(void)
 {
 	int q;
+
 	for (q = 48; q <= 57; q++)
 	{
 		putchar(q);
