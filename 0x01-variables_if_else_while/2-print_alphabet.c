@@ -7,9 +7,10 @@ int main(void)
 {
 	int chara = 97;
 
-	for (chara; chara <= 122; chara++)
+	while (chara <= 122)
 	{
 		putchar(chara);
+		chara++;
 	}
 	putchar('\n');
 	return (0);
