@@ -8,7 +8,7 @@ int main(void)
 {
 	int bus;
 
-	for (bus = 0; bus <= 9; bus++)
+	for (bus = 48; bus <= 57; bus++)
 	{
 		putchar(bus);
 	}
