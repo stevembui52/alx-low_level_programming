@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/* This is the main function that serves as the entry point of the program. */
 int main(void)
 {
 	int n;
