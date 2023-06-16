@@ -1,18 +1,16 @@
 #include <stdio.h>
 /**
 * main - Entry point
-* 
+*
 *Return: Always 0 (Success) */
 int main(void)
 {
-	char chara= 'a';
+	int chara = 97;
 
-	while (chara <= 'z')
+	for (chara; chara <= 122; chara++)
 	{
 		putchar(chara);
-		chara++;
 	}
-
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }
