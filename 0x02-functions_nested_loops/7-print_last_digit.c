@@ -11,7 +11,7 @@ int print_last_digit(int ml)
 	int last;
 
 	last = ml % 10;
-	if (last < 0);
+	if (last < 0)
 	{
 		last = last * -1;
 	}
