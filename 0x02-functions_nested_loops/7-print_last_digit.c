@@ -17,10 +17,5 @@ int print_last_digit(int ml)
 		_putchar(ld + 48);
 		return (ld);
 	}
-	else
-	{
-		_putchar(ld + 48);
-		return (ld);
-	}
 }
 
