@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * main - Entry point
+ * _abs -  absolute value of an integer.
+ *
+ * @i:integer absolute
  *
  * Return: Always 0 (Success)
  */
