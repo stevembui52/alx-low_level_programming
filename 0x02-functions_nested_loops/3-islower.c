@@ -6,16 +6,13 @@
  */
 int _islower(int c)
 {
-	for (c = 97; c <= 122; c++)
+	if (c >= 97 && c <=122)
 	{
-		if (c)
-		{
-			return (1);
-		}
-		else 
-		{
-			return (0);
-		}
+		return (1);
+	}
+	else 
+	{
+		return (0);
 	}
 	_putchar('\n');
 }
