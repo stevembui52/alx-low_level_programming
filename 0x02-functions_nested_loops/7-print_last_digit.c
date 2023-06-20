@@ -1,10 +1,11 @@
 #include "main.h"
+
 /**
  * print_last_digit - print last digit
  *
- * @l:integer number
+ * @n:integer number
  *
- * Return: Always 0 (Success)
+ * Return: last digit
  */
 int print_last_digit(int n)
 {
