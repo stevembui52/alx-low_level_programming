@@ -6,14 +6,14 @@
  *
  * Return: Always 0 (Success)
  */
-int print_last_digit(int l)
+int print_last_digit(int ml)
 {
 	int ld;
 
-	ld = l % 10;
+	ld=ml % 10;
 	if (ld < 0)
 	{
-		ld = ld * -1;
+		ld=ld * -1;
 		_putchar(ld + 48);
 		return (ld);
 	}
