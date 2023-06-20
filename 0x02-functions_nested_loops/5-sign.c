@@ -2,6 +2,8 @@
 /**
  * print_sign - prints the sign of a number
  *
+ * @n:integer value to check sign
+ *
  * Return: Always 0.
  */
 int print_sign(int n)
