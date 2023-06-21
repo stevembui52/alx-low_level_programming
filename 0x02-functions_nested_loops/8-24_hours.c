@@ -5,6 +5,7 @@
  * Return: Always 0 (Success)
  */
 void jack_bauer(void)
+
 {
 	int a;
 	int b;
