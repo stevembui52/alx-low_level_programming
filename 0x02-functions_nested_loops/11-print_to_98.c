@@ -19,7 +19,7 @@ void print_to_98(int n)
 			}
 			else if (i == 98)
 			{
-				_putchar(i);
+				printf("%d", i);	
                         }
 			else if (n >= 98)
 			{
@@ -27,11 +27,11 @@ void print_to_98(int n)
 				{
 					if (j != 98)
 					{
-						_putchar(j);
+						printf("%d", j);
 					}
 					else if (j == 98)
 					{
-						_putchar(j);
+						printf("%d", j);
 					}
 				}
 			}
