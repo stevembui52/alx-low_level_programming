@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * print_square - prints squares
+ *@size:the number of rows and columns
  * Return: Always 0.
  */
 void print_square(int size)
