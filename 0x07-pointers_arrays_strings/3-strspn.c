@@ -3,19 +3,20 @@
 #include <stdbool.h>
 /**
  * _strspn -  gets the length of a prefix substring
- * @s:
- * @accept:
- * Return:
+ * @s:string to be scanned
+ * @accept:string containing the characters to match.
+ * Return:nothing
  */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int init, i, j;
 	unsigned int l1 = strlen(s);
 	unsigned int l2 = strlen(accept);
-	
+
 	for (i = 0; i < l1; i++)
 	{
 		bool fm = false;
+
 		for (j = 0; j < l2; j++)
 		{
 			if (accept[j] == s[i])
@@ -33,4 +34,3 @@ unsigned int _strspn(char *s, char *accept)
 	}
 	return (i);
 }
-	
