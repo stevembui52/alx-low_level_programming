@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * berore_main - function executed before main
+ * before_main - function executed before main
  * Return: no return.
  */
 
