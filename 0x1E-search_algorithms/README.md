@@ -12,4 +12,8 @@
 <th>Task</th>
 <th>more info</th>
 </tr>
+<tr>
+<td>0-linear.c</td>
+<td>a function that searches for a value in an array of integers using the Linear search algorithm</td>
+</tr>
 </table>
