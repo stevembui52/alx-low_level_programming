@@ -7,4 +7,9 @@
 <li>What is a binary search</li>
 <li>What is the best search algorithm to use depending on your needs</li>
 </ul>
-task|Number|info
+<table>
+<tr>
+<th>Task</th>
+<th>more info</th>
+</tr>
+</table>
