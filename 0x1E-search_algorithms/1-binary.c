@@ -1,28 +1,26 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "search_algos.h"
+
 /**
+  * binary_search_r - a recursive function to perform binary search
+  * @array:array of integers to search  from
+  * @left:the left side of the array
+  * @right:the upper-bound of the array
+  * @vaue:the value to search for
   *
-  *
-  *
-  *
+  * Return:index of value found else -1
   */
 int binary_search_r(int *array, size_t left, size_t right, int value)
 {
 	size_t mid, i;
-	char a;
 
 	while (left <= right)
 	{
 		mid = left + (right - left)/2;
 
 		printf("Searching in array");
-	    for (i = left; i <=right; i++)
+	    for (i = left; i <= right; i++)
 		{
-			if (i == 0)
-				a = ':';
-			else
-				a = ',';
-            printf("%c %d", a, array[i]);
+			printf("%s %d", (i == 0) ? ":" : ",", array[i]);
 		}
         printf("\n");
 		if (value == array[mid])
@@ -31,39 +29,31 @@ int binary_search_r(int *array, size_t left, size_t right, int value)
 		}	
 		else if (value > array[mid])
 		{
-			return binary_search_r(array, mid + 1, right, value);
+			return (binary_search_r(array, mid + 1, right, value));
 		}
 		else 
 		{
-			return binary_search_r(array, left,  mid - 1, value);
+			return (binary_search_r(array, left,  mid - 1, value));
 		}
 	}
-	return -1;
-}
-
-int binary_search(int *array, size_t size, int value)
-{
-
-	if (array == NULL || size == 0)
-        return (-1);
-	return binary_search_r(array, 0, size -1, value);
+	return (-1);
 }
 
 /**
- * main - Entry point
- *
- * Return: Always EXIT_SUCCESS
- */
-int main(void)
+  * binary_search - searches fo a value in a sorted array of integers
+  * @array:array to search from
+  * @size:the size of the array
+  * @value:value to search for
+  *
+  * Return:result of the search from binary_search_r
+  */
+int binary_search(int *array, size_t size, int value)
 {
-    int array[] = {
-        0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-    };
-    size_t size = sizeof(array) / sizeof(array[0]);
+	int index;
 
-    printf("Found %d at index: %d\n\n", 2, binary_search(array, size, 2));
-    printf("Found %d at index: %d\n\n", 5, binary_search(array, 5, 5));
-    printf("Found %d at index: %d\n", 999, binary_search(array, size, 999));
-    return (EXIT_SUCCESS);
+	index = binary_search_r(array, 0, size - 1, value);
+	return (index);
+
+	if (array == NULL || size == 0)
+		return (-1);
 }
-
